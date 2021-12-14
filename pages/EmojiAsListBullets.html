@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emojis</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 3em;
+            margin: 10px;
+        }
+        ul{
+            list-style-type: none;
+            border: 8px solid grey;
+            border-style: outset;
+        }
+        .emoji{
+            line-height: 2em;
+            margin-left: -1em;
+            
+        }
+        .emoji-smile::before{
+            content: "\1F603";
+            filter: grayscale(100%);
+        }
+        .emoji-smile{
+            margin-top: 1em;
+        }
+        .emoji-sad::before{
+            content: "\1F625";
+            filter: grayscale(100%);
+        }
+        .emoji-loudly-crying::before{
+            content: "\1F62D";
+            filter: grayscale(100%);
+        }
+        .emoji-loudly-crying{
+            margin-bottom: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>My Todo List</h1>
+    <ul class="todoList">
+        <li class="emoji emoji-smile">Learn HTML </li>
+        <li class="emoji emoji-sad">Learn CSS</li>
+        <li class="emoji emoji-loudly-crying">Learn JavaScript</li>
+  </ul>
+</body>
+</html>
