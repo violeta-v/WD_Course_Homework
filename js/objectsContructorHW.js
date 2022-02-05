@@ -21,7 +21,7 @@ petyr.printAge();
 // функцията връща true, ако patient1 е по-млад (използваме '<=') от patient2.
 // в противен случй - връща false:
 function isYounger( patient1, patient2 ){
-    if (patient1<= patient2) {
+    if (patient1.age<= patient2.age) {
      return true;
     }   
 }
